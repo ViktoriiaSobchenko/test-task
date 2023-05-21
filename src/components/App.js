@@ -11,7 +11,6 @@ const totalPage = 5;
 function App() {
   const [tweets, setTweets] = useState([]);
   const [page, setPage] = useState(1);
-
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
@@ -22,7 +21,7 @@ function App() {
         setTweets((prevState) => [...prevState, ...data]);
         setLoading(false);
       } catch (error) {
-        console.log("Error fetching tweets:", error);
+        console.log("Error fetching tweets:", error.message);
       }
     };
 

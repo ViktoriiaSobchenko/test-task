@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import convertNumber from "../utils/converter";
 import logo from "../../images/Logo.png";
-import Button from "../Button/Button";
 import PropTypes from "prop-types";
 import css from "./TweetCard.module.css";
 
@@ -43,11 +42,13 @@ const TweetCard = ({ id, user, avatar, followers, tweets }) => {
         <p className={css.text}>{user}</p>
         <p className={css.text}>{tweets} tweets</p>
         <p className={css.text}>{convertNumber(followersQuantity)} followers</p>
-        <Button
-          text={following ? "Following" : "Follow"}
+        <button
           onClick={handleFollowClick}
-          className={`${css.btn} ${following ? css.following : ""}`}
-        />
+          style={{ backgroundColor: following ? "#5cd3a8" : "#ebd8ff" }}
+          className={css.btn}
+        >
+          {following ? "Following" : "Follow"}
+        </button>
       </div>
     </div>
   );
