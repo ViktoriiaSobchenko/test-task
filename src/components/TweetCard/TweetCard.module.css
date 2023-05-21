@@ -1,0 +1,45 @@
+.card {
+  position: relative;
+  width: 380px;
+  height: 460px;
+  background-image: url(../../images/picture.png), url(../../images/ellipse.png),
+    url(../../images/rectangle.png),
+    linear-gradient(114.99deg, #471ca9 -0.99%, #5736a3 54.28%, #4b2a99 78.99%);
+  background-size: 308px 168px, 80px 80px, 380px 8px, cover;
+  background-repeat: no-repeat;
+  background-position: 36px 28px, 150px 178px, 0px 214px, 0px 0px;
+  box-shadow: -2.5777px 6.87386px 20.6216px rgba(0, 0, 0, 0.23);
+  border-radius: 20px;
+}
+.logo {
+  width: 76px;
+  height: 22px;
+  margin: 20px auto auto 20px;
+}
+.img {
+  position: absolute;
+  top: 184px;
+  left: 160px;
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 85.9232px;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding-top: 234px;
+}
+
+.text {
+  margin: 0;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: #ebd8ff;
+}
+
+

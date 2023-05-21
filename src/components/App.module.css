@@ -1,0 +1,9 @@
+main {
+  max-width: 1200 px;
+  padding: 0 15px;
+}
+
+.title {
+  text-align: center;
+  color: #ebd8ff;
+}
